@@ -40,6 +40,9 @@ namespace api.Data.Migrations
                     b.Property<string>("ProductType")
                         .HasColumnType("longtext");
 
+                    b.Property<int>("QuantityInStock")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");

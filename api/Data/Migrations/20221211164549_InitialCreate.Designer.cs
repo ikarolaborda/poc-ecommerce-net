@@ -8,7 +8,7 @@ using api.Data;
 namespace api.Data.Migrations
 {
     [DbContext(typeof(StoreContext))]
-    [Migration("20221211161304_InitialCreate")]
+    [Migration("20221211164549_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -41,6 +41,9 @@ namespace api.Data.Migrations
 
                     b.Property<string>("ProductType")
                         .HasColumnType("longtext");
+
+                    b.Property<int>("QuantityInStock")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
