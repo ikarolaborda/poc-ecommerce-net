@@ -3,3 +3,4 @@ node_modules/
 docker/mysql/
 api/obj/
 api/bin/Debug/
+api/bin/*

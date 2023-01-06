@@ -1,6 +1,4 @@
-
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using api.Data;
 using api.Entities;
@@ -9,9 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductsController : ControllerBase
+    public class ProductsController : BaseApiController
     {
         private readonly StoreContext _context;
         
